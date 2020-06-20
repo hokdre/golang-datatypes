@@ -14,33 +14,32 @@ func main() {
 	//2. Operation
 	fmt.Println("2. OPERATION")
 	fmt.Println("2.1 Operation AND (&&)")
-	fmt.Printf("true && true : %t \n", (true && true)) // true
-
-	fmt.Printf("true && false : %t \n", (true && false)) // false
-
+	fmt.Printf("true && true : %t \n", (true && true))     // true
+	fmt.Printf("true && false : %t \n", (true && false))   // false
 	fmt.Printf("false && false : %t \n", (false && false)) // false
 
 	fmt.Println("2.2 Operation OR ( || )")
-	fmt.Printf("true || true : %t \n", (true || true)) // true
-
-	fmt.Printf("true || false : %t \n", (true || false)) // true
-
+	fmt.Printf("true || true : %t \n", (true || true))     // true
+	fmt.Printf("true || false : %t \n", (true || false))   // true
 	fmt.Printf("false || false : %t \n", (false || false)) // false
 
 	fmt.Println("2.3 Operation Not ( ! )")
-
-	fmt.Printf("!(true) : %t \n", !(true)) // false
-
+	fmt.Printf("!(true) : %t \n", !(true))      // false
 	fmt.Printf("!(false) : %t \n \n", !(false)) // true
 
 	//3. Convertion
 	fmt.Println("3. CONVERTION")
-
+	fmt.Println("3.1 Convert to String")
 	fmt.Printf("Convert using strconv.FormatBool : %s \n", strconv.FormatBool(true)) // "true"
+	fmt.Printf("Convert using fmt.Sprintf : %s \n", fmt.Sprintf("%t", true))         // "true"
+	fmt.Printf("Convert using fmt.Sprintf : %s \n", fmt.Sprintf("%v", true))         // "true"
 
-	fmt.Printf("Convert using fmt.Sprintf : %s \n", fmt.Sprintf("%t", true)) // "true"
-
-	fmt.Printf("Convert using fmt.Sprintf : %s \n \n", fmt.Sprintf("%v", true)) // "true"
+	fmt.Println("3.2 Convert to Integer Manually")
+	var integerVal int // initial 0
+	if true {
+		intergerVal = 1
+	}
+	fmt.Printf("%d is true value \n \n", integerVal)
 
 	//4. Printing
 	fmt.Println("4. PRINTING")
