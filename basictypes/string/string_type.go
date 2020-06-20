@@ -135,5 +135,4 @@ func main() {
 	t, _ := time.Parse(layout, value)
 	fmt.Printf("value date : %v \n", t)
 	fmt.Printf("Type date : %T \n", t)
-
 }
