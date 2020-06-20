@@ -34,6 +34,7 @@ notArr := make([]int, 0, 0) //slice
 ## Operations
 > just read and update 
 <br>
+
 > **cannot be adding new item**
 
 ## Common Miss
